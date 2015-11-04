@@ -456,7 +456,7 @@
 
 = slide 'SampleEnumerator' do
   example:
-    module Enumerator
+    class Enumerator
       class Sample < Enumerator
         def initialize(obj)
           super() do |yielder|
@@ -470,7 +470,7 @@
 
 = slide 'Enumerator::Lazy' do
   example:
-    module Enumerator
+    class Enumerator
       class Lazy < Enumerator
         def initialize(obj)
           super() do |yielder|
@@ -488,7 +488,7 @@
 
 = slide 'Enumerator::Lazy#map', 'примерна дефиниция на map' do
   example:
-    module Enumerator
+    class Enumerator
       class Lazy < Enumerator
         def map
           Lazy.new(self) do |yielder, val|
